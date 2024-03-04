@@ -1,3 +1,4 @@
+public class java{
 public static void kadanes(int num[]){
                                  
         int max_sum1 = Integer.MIN_VALUE;
