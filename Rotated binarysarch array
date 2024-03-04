@@ -1,4 +1,4 @@
-public class rotatedbinarysarch {
+public class java {
     public static int RotatedBinarySearch(int a[] ,int key){
         int n = a.length;
         int left = 0;
