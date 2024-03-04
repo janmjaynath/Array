@@ -1,0 +1,41 @@
+public class rotatedbinarysarch {
+    public static int RotatedBinarySearch(int a[] ,int key){
+        int n = a.length;
+        int left = 0;
+        int right = n-1;
+
+    while(left<=right){
+        int mid = (left + right)/2;
+        if(a[mid]==key){
+            return mid;
+        }
+        if(a[left]<a[mid]){
+            if(key>=a[left] && key<a[mid]){
+                right = mid-1;              // 2 6
+            }
+            else{                               
+            left = mid+1;
+            }
+        }
+        else{                                   // a[left] > a[mid]
+            if(key>a[mid] && key<=a[right]){
+                left = mid + 1;
+            }
+            else{
+                right = mid-1;
+            }
+        }
+
+        }
+        return -1;
+
+    }  
+    public static void main(String[] args) {
+        int a[] = {6,7,8,1,2,3,4,5};
+        System.out.println(RotatedBinarySearch(a, 7));
+    }      
+        
+        
+    }
+    
+
