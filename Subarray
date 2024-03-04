@@ -1,4 +1,4 @@
-public class Subarray {
+public class java {
     public static void subarray(int number[]){
         for(int i=0;i<=number.length-1;i++){
             int start = i;
