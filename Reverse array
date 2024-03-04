@@ -1,4 +1,4 @@
-public class Reversearray {
+public class java {
     public static void reverse(int number[]){
         int start = 0;
         int end = number.length-1;
